@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <style>
+        #selective {
+            width: 300px;
+            margin: 10px;
+        }
+
+        #title {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Converter</h1>
+    <div id="grid">
+        <select class="form-select" id="selective" aria-label="Default select example">
+            <option value="2">Binary Input</option>
+            <option value="10">Decimal Input</option>
+            <option value="16">Hex Input</option>
+        </select>
+        <!-- <textarea id="converting" cols="5" rows="1"></textarea> -->
+        <!-- <textarea id="userNumber" cols="20" rows="2"></textarea> -->
+        <div class="input-group">
+            <span class="input-group-text">Input</span>
+            <textarea class="form-control" id="userNumber" aria-label="With textarea"></textarea>
+        </div>
+        <h2 id="result"></h2>
+    </div>
+</body>
+<script src="converter.js"></script>
+
+</html>
